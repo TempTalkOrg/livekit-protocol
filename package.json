@@ -1,0 +1,22 @@
+{
+  "name": "github.com/difftim/protocol",
+  "private": true,
+  "version": "1.42.0",
+  "scripts": {
+    "changeset": "changeset",
+    "ci:publish": "pnpm --filter @cc-livekit/protocol run build && changeset publish",
+    "build": "pnpm --filter @cc-livekit/protocol run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@changesets/cli": "^2.29.4",
+    "@livekit/changesets-changelog-github": "^0.0.4",
+    "esbuild": "^0.25.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch": "10.0.3"
+    }
+  },
+  "packageManager": "pnpm@9.15.9"
+}
